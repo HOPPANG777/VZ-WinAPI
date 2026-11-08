@@ -1,0 +1,106 @@
+# ==========================================================
+# VZ-WinAPI (Visual Studio 2026 / MSVC v145 / Win32 API 연습 프로젝트)
+# ==========================================================
+
+# ----------------------------------------------------------
+# 빌드 출력 (OutDir/IntDir = $(SolutionDir)_Build\...)
+# ----------------------------------------------------------
+_Build/
+
+# 위 경로 밖(프로젝트 폴더 안)에 생기는 기본 출력 폴더
+# (예: 20261022/x64/Debug). IntDir 설정 전에 빌드한 흔적도 막는다.
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww]in32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]in/
+[Oo]bj/
+
+# ----------------------------------------------------------
+# Visual Studio 로컬 상태 (사용자/PC마다 달라지는 파일)
+# ----------------------------------------------------------
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+
+# IntelliSense / 브라우징 DB / 미리 컴파일된 헤더 캐시
+*.VC.db
+*.VC.VC.opendb
+*.sdf
+*.opensdf
+*.ipch
+ipch/
+*.aps
+
+# ----------------------------------------------------------
+# 컴파일/링크 중간 산출물
+# ----------------------------------------------------------
+*.obj
+*.o
+*.pch
+*.gch
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.res
+*.iobj
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.unsuccessfulbuild
+*.log
+*.tmp
+*.cache
+*.bsc
+*.sbr
+*.d
+
+# C++20 modules / header unit 의존성 스캔 결과 (*.obj.dt.*)
+*.dt.d.json
+*.dt.module.json
+*.dt.module.json.command
+*.ifc
+
+# 최종 산출물
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.out
+*.app
+
+# 정적 분석 결과
+*.sarif
+*.nativecodeanalysis.xml
+
+# ----------------------------------------------------------
+# vcpkg
+#  - vcpkg_installed/ : manifest 모드(VcpkgEnableManifest=true)에서
+#                       빌드 시 자동으로 설치되는 라이브러리/헤더/바이너리
+#  - /vcpkg/          : 저장소 루트에 vcpkg 자체를 clone 해 둔 경우
+#  vcpkg.json, vcpkg-configuration.json 은 "의존성 선언"이므로 커밋한다.
+# ----------------------------------------------------------
+vcpkg_installed/
+/vcpkg/
+
+# ----------------------------------------------------------
+# OS / 에디터 잡파일
+# ----------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.swp
+*~
